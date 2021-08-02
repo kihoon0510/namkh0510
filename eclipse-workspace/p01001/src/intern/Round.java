@@ -1,16 +1,13 @@
 package intern;
 
 public class Round {
-	private int[] arrayInt = new int[15];
 	private int[] arrayDouble = new int[15];
 	private double d;
-	private int p;
 	private int i; 
 
 	public Round(double d, int p) {
 		// TODO Auto-generated constructor stub
 		this.d = d;
-		this.p = p;
 	}
 	
 	public void getRound() {

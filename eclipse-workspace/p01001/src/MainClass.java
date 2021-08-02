@@ -1,11 +1,4 @@
-import intern.Circle;
-import intern.InstanceCount;
-import intern.RepeatSum;
 import intern.Round;
-import intern.Square;
-import intern.Stack;
-import intern.ToStringWith;
-import intern.Triangle;
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -47,6 +40,6 @@ public class MainClass {
 		
 		Round rd = new Round(321.12345678, 5);
 		rd.getRound();
-		
+		System.out.println("Hello!");
 	}
 }
