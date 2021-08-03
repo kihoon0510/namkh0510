@@ -12,7 +12,6 @@ INDEX VERSION 1.131+C:\Users\»ç¿ëÀÚ\namkh0510\eclipse-workspace\.metadata\.plugi
 3007145569.index
 1612093837.index
 3287787032.index
-830383463.index
 815184005.index
 2330840297.index
 661037494.index
