@@ -1,0 +1,32 @@
+package intern;
+
+public class Round {
+	private double d;
+	private int p;
+	private double v,value;
+	
+	
+	public Round(double d, int point) {
+		// TODO Auto-generated constructor stub
+		this.d = d;
+		this.p = point;
+	}
+	
+	public void getValue() {
+		if(p>0) {
+			for(int i=0;i<p;i++) {
+				d=d/10;
+			}
+			v=(d%10);
+			if(v>4) {
+				d+=1;
+			}
+			for(int i=0;i<p;i++) {
+				d=d*10;
+			}
+		}
+		
+		System.out.println(d);
+	}
+	
+}

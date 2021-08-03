@@ -1,0 +1,33 @@
+package intern;
+
+public class Round {
+	private int[] arrayDouble = new int[15];
+	private int[] arrayInt = new int[15];
+	private double d;
+	private int i; 
+
+	public Round(double d, int p) {
+		// TODO Auto-generated constructor stub
+		this.d = d;
+	}
+	
+	public void getRound() {
+		
+	}
+	public void inputArray() {
+		i = (int)d;  // 정수 부분 분리
+		d = d-i;  // 소수점 자리 분리
+		
+		
+		// 소수점자리를 배열로 
+		for(int j=0;j<15;j++) {
+			d = d*10;
+			arrayDouble[j] = (int)d;
+		}
+		
+		for(int j=0;j<15;j++) {
+			
+		}
+	}
+	
+}

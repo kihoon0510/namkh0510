@@ -1,0 +1,9 @@
+package intern.no10;
+
+public class CalendarUi {
+
+	public CalendarUi(int year, int month) {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

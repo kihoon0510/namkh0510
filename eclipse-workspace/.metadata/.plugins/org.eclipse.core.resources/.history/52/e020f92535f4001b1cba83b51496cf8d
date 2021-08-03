@@ -1,0 +1,18 @@
+package intern.no10;
+
+import java.time.LocalDate;
+
+public class CalendarUi {
+	private int year, month;
+
+	public CalendarUi(int year, int month) {
+		// TODO Auto-generated constructor stub
+		this.year = year;
+		this.month = month;
+		
+		LocalDate date = LocalDate.of(year, month, 1);
+		int
+		
+	}
+	
+}

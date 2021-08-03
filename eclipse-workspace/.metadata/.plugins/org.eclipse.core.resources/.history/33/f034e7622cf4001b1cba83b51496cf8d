@@ -1,0 +1,45 @@
+package intern.no09;
+
+import java.util.Scanner;
+
+public class DateCompare {
+	
+	private String[] dateBank1 = new String[3];
+	private String[] dateBank2 = new String[3];
+	private String date1, date2;
+
+	public DateCompare() {
+		// TODO Auto-generated constructor stub
+		System.out.println("입력 형식: yyyy-mm-dd ");
+		System.out.println("첫 번째 날짜 입력:");
+		Scanner sc = new Scanner(System.in);
+		date1 = sc.next();
+		System.out.println("두 번째 날짜 입력:");
+		date2 = sc.next();
+		compare(date2, date1);
+	}
+
+	public void compare(String d1, String d2) {
+		String first = null;
+		String second = null;
+		
+		dateBank1 =d1.split("-");
+		dateBank2 =d2.split("-");
+		
+		for(int i=0;i<3;i++) {
+			if(Integer.parseInt(dateBank1[i])>Integer.parseInt(dateBank2[i])) {
+				first = d1;
+				second = d2;
+				break;
+			}else if(Integer.parseInt(dateBank1[i])==Integer.parseInt(dateBank2[i])) {
+				continue;
+			}else {
+				first =d2;
+				second = d1;
+				break;
+			}
+		}
+		System.out.println(first + "is after"+second);
+	}
+	
+}
