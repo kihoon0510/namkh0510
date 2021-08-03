@@ -1,17 +1,17 @@
 package intern.no08;
 
 public class MyArrayList<E> {
-
-	private Object[] list;
+	private int arraySize=1;
+	private Object[] oldlist = new Object[1];
+	private Object[] newlist = new Object[arraySize];
 	
-	public MyArrayList() {
-		// TODO Auto-generated constructor stub
-		
-		
-	}
 	
-	public boolean add(Object elem) {
-		list[0] = elem;
+	public boolean add(E elem) {
+		oldlist[0] = elem;
+		arraySize++;
+		for(int i=0;i<arraySize;i++) {
+			
+		}
 		return true;
 	}
 	
@@ -19,11 +19,11 @@ public class MyArrayList<E> {
 		
 	}
 	
-	public void remove(Object elem) {
+	public void remove(E elem) {
 		
 	}
 	
-	public void contains(Object elem) {
+	public void contains(E elem) {
 		
 	}
 	
@@ -31,25 +31,27 @@ public class MyArrayList<E> {
 		
 	}
 	
-	public void indexOf(Object elem) {
+	public void indexOf(E elem) {
 		
 	}
 	
-	public void size() {
-		
+	public int size() {
+		int size = oldlist.length;
+		return size;
 	}
 	
-	public void get(int index) {
+	public Object get(int index) {
+		return oldlist[index];
 		
 	}
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		String listValue;
-		listValue = (String) list[0];
+		int listValue;
+		listValue = (int) oldlist[0];
 		
-		return listValue;
+		return "["+listValue+"]";
 	}
 	
 }
