@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="intern.no02.Square"/>
-    <fullyQualifiedTypeName name="intern.no01.ToStringWith"/>
-    <fullyQualifiedTypeName name="intern.no02.Triangle"/>
-    <fullyQualifiedTypeName name="intern.no02.Circle"/>
-    <fullyQualifiedTypeName name="intern.no03.InstanceCount"/>
-    <fullyQualifiedTypeName name="intern.no04.Stack"/>
-    <fullyQualifiedTypeName name="intern.no05.RepeatSum"/>
-    <fullyQualifiedTypeName name="intern.no07.ThreeDArray"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="intern.no08.MyArrayList"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

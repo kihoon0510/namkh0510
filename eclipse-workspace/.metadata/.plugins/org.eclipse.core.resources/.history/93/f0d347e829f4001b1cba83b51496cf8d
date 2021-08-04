@@ -1,9 +1,0 @@
-package intern.no09;
-
-public class DateCompare {
-
-	public void compare(String d1, String d2) {
-		
-		System.out.println(d1+" after/before "+d2);
-	}
-}
