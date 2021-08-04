@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 content_assist_number_of_computers=20
+=======
+>>>>>>> bc1810a9ad617db07999773530f449e05dd276d6
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
