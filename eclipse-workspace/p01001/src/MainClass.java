@@ -27,6 +27,7 @@ import intern.no15.ReadCsv;
 public class MainClass {
 	public static void main(String[] args) {
 
+		/*
 		// no01 Object의 toString을 오버라이드하여 해시등을 지움.
 		System.out.println(new ToStringWith(30, 20));
 
@@ -140,6 +141,9 @@ public class MainClass {
 		// no14
 		BackToFront btf = new BackToFront("Father Charles Goes Down And Ends Battle");
 
+
+		*/
+		
 		// no15
 		ReadCsv rc = new ReadCsv();
 		rc.convert("1,\"says \"\"aa\"\"\",c\r\n" + "2,\"\"\"2,130\"\"\",d\r\n" + "3,hi,\"\"\"aaa\"\"\r\n"

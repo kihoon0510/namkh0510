@@ -60,6 +60,6 @@ public class Stack {
 			System.out.print(array[i]+", ");
 		}
 		System.out.println("]");
-		System.out.println("���� ��ġ: "+nowPoint);
+		System.out.println("현재 위치: "+nowPoint);
 	}
 }
