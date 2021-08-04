@@ -57,3 +57,6 @@
 1628065799072	Rename field 'ss'
 1628065812264	Rename field 'sArray'
 1628065816198	Rename field 's'
+1628065970723	Rename field 'down'
+1628065986575	Rename local variable 'dow'
+1628065996580	Rename local variable 'date'

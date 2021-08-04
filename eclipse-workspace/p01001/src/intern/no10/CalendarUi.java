@@ -7,7 +7,7 @@ import java.util.Locale;
 
 public class CalendarUi {
 	private int year, month;
-	int down;
+	int dayOfWeekNum;
 	int end;
 	
 	public CalendarUi(int year, int month) {
@@ -15,15 +15,13 @@ public class CalendarUi {
 		this.year = year;
 		this.month = month;
 		
-		LocalDate date = LocalDate.of(year, month, 1);
-		DayOfWeek dow = date.getDayOfWeek();
-		down =dow.getValue();
-		System.out.println(down);
+		LocalDate localDate = LocalDate.of(year, month, 1);
+		DayOfWeek dayOfWeek = localDate.getDayOfWeek();
+		dayOfWeekNum =dayOfWeek.getValue();
+		System.out.println(dayOfWeekNum);
 		
-		String w =dow.getDisplayName(TextStyle.SHORT, Locale.KOREA);
-		System.out.println(w);
-		System.out.println(date.lengthOfMonth());
-		end = date.lengthOfMonth();
+		System.out.println(localDate.lengthOfMonth());
+		end = localDate.lengthOfMonth();
 		
 		draw();
 		
@@ -32,12 +30,12 @@ public class CalendarUi {
 	public void draw() {
 		System.out.println(year+"년 "+month+"월");
 		System.out.println("일 월 화 수 목 금 토");
-		for(int i=0;i<down;i++) {
+		for(int i=0;i<dayOfWeekNum;i++) {
 			System.out.print("  ");
 		}
 		for(int i=1;i<end;i++) {
 			System.out.print(" "+(i));
-			if((i+down)%7==0) {
+			if((i+dayOfWeekNum)%7==0) {
 				System.out.println("");
 			}
 		}
