@@ -17,6 +17,7 @@ public class BackToFront {
 			System.out.print(v+" ");
 			
 		}
+		System.out.println("");
 		
 	}
 }

@@ -15,6 +15,7 @@ public class MyArrayList<E> {
 		return true;
 	}
 	
+	//¹Ì¿Ï¼º
 	public void remove(int index) {
 		
 	}

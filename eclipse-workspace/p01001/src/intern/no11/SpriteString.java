@@ -7,6 +7,7 @@ public class SpriteString {
 	private char sp;
 	private String cityState,city,state;
 	
+	// 입력받은 문자열에서 .을 찾아서 각각 따로 저장.
 	public SpriteString(String city,char sp) {
 		// TODO Auto-generated constructor stub
 		this.cityState = city;

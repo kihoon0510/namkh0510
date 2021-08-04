@@ -9,6 +9,7 @@ public class CalendarUi {
 	private int year, month;
 	int down;
 	int end;
+	
 	public CalendarUi(int year, int month) {
 		// TODO Auto-generated constructor stub
 		this.year = year;

@@ -2,6 +2,7 @@ package intern.no04;
 
 public class Stack {
 	
+	// 스택의 값이 들어올 위치를 추적하여 해당 위치로만 값을 입력받음
 	private static int nowPoint=1;
 	private Object[] array;
 	
@@ -11,12 +12,12 @@ public class Stack {
 	}
 	
 	public void push(Object object) {
-		
 		array[nowPoint] = object;
 		nowPoint++;
 		show();
 	}
 	
+	// 값을 제거시 현재 위치를 같이 줄여준다.
 	public void pop() {
 		if(nowPoint>1)nowPoint--;
 		array[nowPoint] = null;
@@ -52,7 +53,7 @@ public class Stack {
 	}
 	
 	
-	
+	// 현재 위치와 스택의 모든 값을 보여준다.
 	private void show() {
 		System.out.print("[");
 		for(int i=1; i<nowPoint; i++) {
