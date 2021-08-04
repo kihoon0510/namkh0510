@@ -30,8 +30,8 @@ public class CalendarUi {
 	}
 	
 	public void draw() {
-		System.out.println(year+"³â "+month+"¿ù");
-		System.out.println("ÀÏ ¿ù È­ ¼ö ¸ñ ±İ Åä");
+		System.out.println(year+"ë…„ "+month+"ì›”");
+		System.out.println("ì¼ ì›” í™” ìˆ˜ ëª© ê¸ˆ í† ");
 		for(int i=0;i<down;i++) {
 			System.out.print("  ");
 		}

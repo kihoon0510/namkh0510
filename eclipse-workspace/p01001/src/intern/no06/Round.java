@@ -45,7 +45,7 @@ public class Round {
 			}
 		}
 		
-		System.out.println("p: "+p+"ÀÚ¸®¼öÀÇ ¹İ¿Ã¸² °ª:"+d);
+		System.out.println("p: "+p+"ìë¦¬ìˆ˜ì˜ ë°˜ì˜¬ë¦¼ ê°’:"+d);
 		
 	}
 	

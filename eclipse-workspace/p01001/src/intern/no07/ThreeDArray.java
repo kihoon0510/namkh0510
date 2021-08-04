@@ -29,7 +29,7 @@ public class ThreeDArray {
 	
 	public void get(int a,int b,int c) {
 		point = (a-1) + as*(b-1) + cs*(c-1);
-		System.out.println("ÁÂÇ¥ ("+a+","+b+","+c+") ÀÇ °ª: "+array[point]);
+		System.out.println("ì¢Œí‘œ ("+a+","+b+","+c+") ì˜ ê°’: "+array[point]);
 	}
 	
 	public void showArray() {

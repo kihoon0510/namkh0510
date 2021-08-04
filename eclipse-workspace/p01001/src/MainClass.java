@@ -27,11 +27,11 @@ import intern.no15.ReadCsv;
 public class MainClass {
 	public static void main(String[] args) {
 
-		// no01 ObjectÀÇ toStringÀ» ¿À¹ö¶óÀÌµåÇÏ¿© ÇØ½ÃµîÀ» Áö¿ò.
+		// no01 Objectì˜ toStringì„ ì˜¤ë²„ë¼ì´ë“œí•˜ì—¬ í•´ì‹œë“±ì„ ì§€ì›€.
 		System.out.println(new ToStringWith(30, 20));
 
 		int area = 0;
-		// no02 Shape Ãß»ó Å¬·¡½ºÀÇ Ãß»ó¸Ş¼­µå¸¦ »ó¼Ó¹Ş¾Æ »ï,»ç°¢Çü ¹× ¿øÇüÀÇ ³ĞÀÌ¸¦ ±¸ÇÔ.
+		// no02 Shape ì¶”ìƒ í´ë˜ìŠ¤ì˜ ì¶”ìƒë©”ì„œë“œë¥¼ ìƒì†ë°›ì•„ ì‚¼,ì‚¬ê°í˜• ë° ì›í˜•ì˜ ë„“ì´ë¥¼ êµ¬í•¨.
 		Square sq = new Square(10, 10);
 		area = sq.getArea();
 		System.out.println(area);
@@ -40,7 +40,7 @@ public class MainClass {
 		area = tr.getArea();
 		System.out.println(area);
 
-		// »ï°¢ÇüÀÇ ³ĞÀÌ´Â ¹Øº¯*³ôÀÌ ¿Í µÎ º¯ÀÇ ±æÀÌ¿Í °¢µµ¸¦ ÅëÇØ ³ĞÀÌ¸¦ ±¸ÇÒ ¼ö ÀÖ´Ù.
+		// ì‚¼ê°í˜•ì˜ ë„“ì´ëŠ” ë°‘ë³€*ë†’ì´ ì™€ ë‘ ë³€ì˜ ê¸¸ì´ì™€ ê°ë„ë¥¼ í†µí•´ ë„“ì´ë¥¼ êµ¬í•  ìˆ˜ ìˆë‹¤.
 		Triangle tr2 = new Triangle(10, 14, 40);
 		area = tr2.getArea();
 		System.out.println(area);
@@ -49,12 +49,12 @@ public class MainClass {
 		area = ci.getArea();
 		System.out.println(area);
 
-		// no03 staticÀ» ÅëÇØ »ı¼ºµÈ °´Ã¼ÀÇ ¼ö¸¦ ±¸ÇÏ¿´´Ù.
+		//  no03 staticì„ í†µí•´ ìƒì„±ëœ ê°ì²´ì˜ ìˆ˜ë¥¼ êµ¬í•˜ì˜€ë‹¤.
 		InstanceCount ic = new InstanceCount();
 		InstanceCount ic2 = new InstanceCount();
 		InstanceCount ic3 = new InstanceCount();
 
-		// no04
+		// no04 
 		Stack stack = new Stack(100);
 		stack.push("hi");
 		stack.push("hi2");
@@ -74,12 +74,11 @@ public class MainClass {
 		stack.isEmpty();
 		stack.isFull();
 
-		// no05 doubleÀº 15ÀÚ¸®¼ö ±îÁö Á¤È®µµ¸¦ À¯Áö Á¤È®ÇÑ°ªÀº ¾Æ´Ô.
+		// no05 doubleì€ 15ìë¦¬ìˆ˜ ê¹Œì§€ ì •í™•ë„ë¥¼ ìœ ì§€ ì •í™•í•œê°’ì€ ì•„ë‹˜.
 		RepeatSum rs = new RepeatSum(20, 0.1);
 		System.out.println(rs.value());
-		// double
 
-		// no06 double °ª°ú ¹İ¿Ã¸² ¿øÇÏ´Â À§Ä¡(À½¼öÀÏ°æ¿ì ¼Ò¼öÁ¡ ÀÚ¸®)
+		// no06 double ê°’ê³¼ ë°˜ì˜¬ë¦¼ ì›í•˜ëŠ” ìœ„ì¹˜(ìŒìˆ˜ì¼ê²½ìš° ì†Œìˆ˜ì  ìë¦¬)
 		Round rd = new Round(54436.12345678, -6); // 
 		rd.getValue();
 
@@ -99,7 +98,7 @@ public class MainClass {
 		System.out.println(as.size());
 		System.out.println(as.isEmpty());
 
-		// no08 - ¹Ì¿Ï¼º
+		// no08 - ë¯¸ì™„ì„±
 		MyArrayList<Integer> mal = new MyArrayList<Integer>();
 		mal.add(3);
 		System.out.println("mal:" + mal.size());

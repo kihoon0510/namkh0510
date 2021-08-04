@@ -7,7 +7,7 @@ public class SpriteString {
 	private char sp;
 	private String cityState,city,state;
 	
-	// ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­¿¡¼­ .À» Ã£¾Æ¼­ °¢°¢ µû·Î ÀúÀå.
+	// ì…ë ¥ë°›ì€ ë¬¸ìì—´ì—ì„œ .ì„ ì°¾ì•„ì„œ ê°ê° ë”°ë¡œ ì €ì¥.
 	public SpriteString(String city,char sp) {
 		// TODO Auto-generated constructor stub
 		this.cityState = city;

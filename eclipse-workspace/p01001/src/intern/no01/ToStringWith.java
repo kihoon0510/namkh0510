@@ -9,7 +9,7 @@ public class ToStringWith {
 	
 	}
 	
-	//toStringÀ» ¿À¹ö¶óÀÌµåÇÏ¿© ÇØ½Ã°ªµîÀ» Á¦°Å.
+	//toStringì„ ì˜¤ë²„ë¼ì´ë“œí•˜ì—¬ í•´ì‹œê°’ë“±ì„ ì œê±°.
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

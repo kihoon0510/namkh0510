@@ -2,7 +2,7 @@ package intern.no04;
 
 public class Stack {
 	
-	// ½ºÅÃÀÇ °ªÀÌ µé¾î¿Ã À§Ä¡¸¦ ÃßÀûÇÏ¿© ÇØ´ç À§Ä¡·Î¸¸ °ªÀ» ÀÔ·Â¹ŞÀ½
+	// ìŠ¤íƒì˜ ê°’ì´ ë“¤ì–´ì˜¬ ìœ„ì¹˜ë¥¼ ì¶”ì í•˜ì—¬ í•´ë‹¹ ìœ„ì¹˜ë¡œë§Œ ê°’ì„ ì…ë ¥ë°›ìŒ
 	private static int nowPoint=1;
 	private Object[] array;
 	
@@ -17,7 +17,7 @@ public class Stack {
 		show();
 	}
 	
-	// °ªÀ» Á¦°Å½Ã ÇöÀç À§Ä¡¸¦ °°ÀÌ ÁÙ¿©ÁØ´Ù.
+	// ê°’ì„ ì œê±°ì‹œ í˜„ì¬ ìœ„ì¹˜ë¥¼ ê°™ì´ ì¤„ì—¬ì¤€ë‹¤.
 	public void pop() {
 		if(nowPoint>1)nowPoint--;
 		array[nowPoint] = null;
@@ -53,13 +53,13 @@ public class Stack {
 	}
 	
 	
-	// ÇöÀç À§Ä¡¿Í ½ºÅÃÀÇ ¸ğµç °ªÀ» º¸¿©ÁØ´Ù.
+	// í˜„ì¬ ìœ„ì¹˜ì™€ ìŠ¤íƒì˜ ëª¨ë“  ê°’ì„ ë³´ì—¬ì¤€ë‹¤.
 	private void show() {
 		System.out.print("[");
 		for(int i=1; i<nowPoint; i++) {
 			System.out.print(array[i]+", ");
 		}
 		System.out.println("]");
-		System.out.println("ÇöÀç À§Ä¡: "+nowPoint);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡: "+nowPoint);
 	}
 }

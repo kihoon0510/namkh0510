@@ -4,7 +4,7 @@ public class StringFormat {
 	
 	private StringBuffer str = new StringBuffer();
 	
-	// ½ºÆ®¸µ¹öÆÛ¸¦ ÅëÇØ ÀÚ¿ø Àı¾à
+	// ìŠ¤íŠ¸ë§ë²„í¼ ì‚¬ìš© 
 	public void append(String s) {
 		str.append(" "+s);
 	}
