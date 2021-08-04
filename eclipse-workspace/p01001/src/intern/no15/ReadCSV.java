@@ -1,6 +1,6 @@
 package intern.no15;
 
-public class ReadCsv {
+public class ReadCSV {
 	String[] strArray;
 	String str;
 	

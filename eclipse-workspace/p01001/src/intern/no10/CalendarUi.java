@@ -8,7 +8,7 @@ import java.util.Locale;
 public class CalendarUi {
 	private int year, month;
 	int dayOfWeekNum;
-	int end;
+	int endMonthNum;
 	
 	public CalendarUi(int year, int month) {
 		// TODO Auto-generated constructor stub
@@ -21,7 +21,7 @@ public class CalendarUi {
 		System.out.println(dayOfWeekNum);
 		
 		System.out.println(localDate.lengthOfMonth());
-		end = localDate.lengthOfMonth();
+		endMonthNum = localDate.lengthOfMonth();
 		
 		draw();
 		
@@ -33,7 +33,7 @@ public class CalendarUi {
 		for(int i=0;i<dayOfWeekNum;i++) {
 			System.out.print("  ");
 		}
-		for(int i=1;i<end;i++) {
+		for(int i=1;i<endMonthNum;i++) {
 			System.out.print(" "+(i));
 			if((i+dayOfWeekNum)%7==0) {
 				System.out.println("");

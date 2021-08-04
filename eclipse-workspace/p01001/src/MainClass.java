@@ -16,11 +16,13 @@ import intern.no11.SpriteString;
 import intern.no12.StringFormat;
 import intern.no13.StringSort;
 import intern.no14.BackToFront;
-import intern.no15.ReadCsv;
+import intern.no15.ReadCSV;
 
 public class MainClass {
 	public static void main(String[] args) {
-
+		
+		
+		/*
 		
 		// no01 Object의 toString을 오버라이드하여 해시등을 지움.
 		System.out.println(new ToStringWith(30, 20));
@@ -74,7 +76,7 @@ public class MainClass {
 		System.out.println(repeatSum.value());
 
 		// no06 double 값과 반올림 원하는 위치(음수일경우 소수점 자리)
-		Round round = new Round(54436.12345678, -6); // 
+		Round round = new Round(54436.12345678, 3); // 
 		round.getValue();
 
 		// no07 
@@ -139,9 +141,11 @@ public class MainClass {
 		
 		
 		// no15
-		ReadCsv rc = new ReadCsv();
-		rc.convert("1,\"says \"\"aa\"\"\",c\r\n" + "2,\"\"\"2,130\"\"\",d\r\n" + "3,hi,\"\"\"aaa\"\"\r\n"
+		ReadCSV readCSV = new ReadCSV();
+		readCSV.convert("1,\"says \"\"aa\"\"\",c\r\n" + "2,\"\"\"2,130\"\"\",d\r\n" + "3,hi,\"\"\"aaa\"\"\r\n"
 				+ "\"\"ddd\"\r\n" + "4,yyy,zzz");
+		
+		*/
 		
 		
 	}

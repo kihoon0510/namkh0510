@@ -3,52 +3,63 @@ package intern.no04;
 public class MyStack {
 	
 	// 스택의 값이 들어올 위치를 추적하여 해당 위치로만 값을 입력받음
-	private static int nowPoint=1;
+	private int nextPoint=0;
+	private int size=0;
 	private Object[] array;
 	
 	
 	public MyStack(int size) {
-		array = new Object[size];
+		this.size = size;
+		array = new Object[this.size];
 	}
 	
 	public void push(Object object) {
-		array[nowPoint] = object;
-		nowPoint++;
-		show();
+		if(nextPoint<size) {
+			array[nextPoint] = object;
+			nextPoint++;
+			show();
+		}else {
+			System.out.println("Stack is Full");
+		}
+		
 	}
 	
 	// 값을 제거시 현재 위치를 같이 줄여준다.
 	public void pop() {
-		if(nowPoint>1)nowPoint--;
-		array[nowPoint] = null;
+		
+		if(nextPoint<0) {
+			nextPoint=0;
+		}
+		nextPoint--;
+		array[nextPoint] = null;
 		show();
 	}
 	
 	public Object top() {
-		System.out.println("Top: "+array[nowPoint-1]);
-		return array[nowPoint-1];
+		if(nextPoint ==0) {
+			System.out.println("Top is null");
+			return null;
+		}
+		System.out.println("Top: "+array[nextPoint-1]);
+		return array[nextPoint-1];
 	}
 	
 	public void isEmpty() {
-		if(nowPoint ==0) {
-			System.out.println("isEmpty: False");
+		if(nextPoint ==0) {
+			System.out.println("isEmpty: True");
 		}
-		else if(array[nowPoint-1] !=null) {
+		else if(nextPoint >0) {
 			System.out.println("isEmpty: False");
-		}else {
-		System.out.println("isEmpt: True");
 		}
 	}
 	
 	public void isFull() {
 		
-		if(nowPoint ==0) {
-			System.out.println("isFull: True");
+		if(nextPoint ==0) {
+			System.out.println("isFull: False");
 		}
-		else if(array[nowPoint-1] !=null) {
+		else if(nextPoint>0) {
 			System.out.println("isFull: True");
-		}else {
-		System.out.println("isFull: False");
 		}
 	}
 	
@@ -56,10 +67,10 @@ public class MyStack {
 	// 현재 위치와 스택의 모든 값을 보여준다.
 	private void show() {
 		System.out.print("[");
-		for(int i=1; i<nowPoint; i++) {
+		for(int i=0; i<nextPoint; i++) {
 			System.out.print(array[i]+", ");
 		}
 		System.out.println("]");
-		System.out.println("현재 위치: "+nowPoint);
+		//System.out.println("다음 입력 위치: "+nowPoint);
 	}
 }
