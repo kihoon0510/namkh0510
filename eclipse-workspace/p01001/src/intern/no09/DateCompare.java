@@ -12,12 +12,12 @@ public class DateCompare {
 
 	public DateCompare() {
 		// TODO Auto-generated constructor stub
-		System.out.println("입력 형식: yyyy-mm-dd ");
-		System.out.println("첫 번째 날짜 입력:");
+		System.out.println("날짜 입력 형식: yyyy-mm-dd ");
+		System.out.println("첫 번째 날짜:");
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		this.date1 = sc.next();
-		System.out.println("두 번째 날짜 입력:");
+		System.out.println("두 번째 날짜:");
 		this.date2 = sc.next();
 		compare(date1, date2);
 	}

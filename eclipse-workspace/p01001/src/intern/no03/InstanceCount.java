@@ -2,10 +2,11 @@ package intern.no03;
 
 public class InstanceCount {
 
+	//static ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ì—¬ ëª¨ë“  ê°ì²´ì—ì„œ ê³µìœ ë˜ë„ë¡ í•¨.
 	static int count =0;
 	public InstanceCount() {
 		// TODO Auto-generated constructor stub
 		count ++;
-		System.out.println("ÇöÀç »ç¿ëÁßÀÎ ÀÎ½ºÅÏ½º :"+count+"°³");
+		System.out.println("í˜„ì¬ ì‚¬ìš©ì¤‘ì¸ ì¸ìŠ¤í„´ìŠ¤:"+count+"ê°œ");
 	}
 }

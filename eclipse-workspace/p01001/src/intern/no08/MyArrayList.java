@@ -15,6 +15,7 @@ public class MyArrayList<E> {
 		return true;
 	}
 	
+	//미완성
 	public void remove(int index) {
 		
 	}
