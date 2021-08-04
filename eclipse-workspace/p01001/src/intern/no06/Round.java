@@ -1,51 +1,51 @@
 package intern.no06;
 
 public class Round {
-	private double d;
-	private int p,v;
+	private double doubleValue;
+	private int point,value;
 	
 	
 	public Round(double d, int point) {
 		// TODO Auto-generated constructor stub
-		this.d = d;
-		this.p = point;
+		this.doubleValue = d;
+		this.point = point;
 	}
 	
 	public void getValue() {
-		if(p>0) {
-			for(int i=0;i<p;i++) {
-				d=d/10;
+		if(point>0) {
+			for(int i=0;i<point;i++) {
+				doubleValue=doubleValue/10;
 			}
-			v = (int)((d%1)*10);
-			if(v>4) {
-				d+=1;
-				d=(int)d;
+			value = (int)((doubleValue%1)*10);
+			if(value>4) {
+				doubleValue+=1;
+				doubleValue=(int)doubleValue;
 			}else {
-				d=(int)d;
+				doubleValue=(int)doubleValue;
 			}
-			for(int i=0;i<p;i++) {
-				d=d*10;
+			for(int i=0;i<point;i++) {
+				doubleValue=doubleValue*10;
 			}
-		}else if(p<0) {
-			p = p*-1;
-			for(int i=0;i<p;i++) {
-				d=d*10;
+		}else if(point<0) {
+			point = point*-1;
+			for(int i=0;i<point;i++) {
+				doubleValue=doubleValue*10;
 			}
-			v=(int)(d%10);
-			if(v>4) {
-				d+=10;
-				d=d/10;
-				d=(int)d;
+			value=(int)(doubleValue%10);
+			if(value>4) {
+				doubleValue+=10;
+				doubleValue=doubleValue/10;
+				doubleValue=(int)doubleValue;
 			}else {
-				d=d/10;
-				d=(int)d;
+				doubleValue=doubleValue/10;
+				doubleValue=(int)doubleValue;
 			}
-			for(int i=1;i<p;i++) {
-				d=d/10;
+			for(int i=1;i<point;i++) {
+				doubleValue=doubleValue/10;
 			}
 		}
 		
-		System.out.println("p: "+p+"자리수의 반올림 값:"+d);
+		System.out.println("p: "+point+"자리수의 반올림 값:"+doubleValue);
 		
 	}
 	

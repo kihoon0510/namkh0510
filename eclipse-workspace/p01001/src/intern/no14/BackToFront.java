@@ -3,17 +3,17 @@ package intern.no14;
 import java.util.Stack;
 
 public class BackToFront {
-	private String[] s;
-	Stack<String> ss = new Stack<String>();
+	private String[] strArray;
+	Stack<String> stackString = new Stack<String>();
 	public BackToFront(String str) {
 		// TODO Auto-generated constructor stub
 		
-		s = str.split(" ");
-		for(int i =0;i<s.length;i++) {
-			ss.push(s[i]);
+		strArray = str.split(" ");
+		for(int i =0;i<strArray.length;i++) {
+			stackString.push(strArray[i]);
 		}
-		while(!ss.isEmpty()) {
-			String v = ss.pop();
+		while(!stackString.isEmpty()) {
+			String v = stackString.pop();
 			System.out.print(v+" ");
 			
 		}

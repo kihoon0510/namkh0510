@@ -1,13 +1,13 @@
 package intern.no04;
 
-public class Stack {
+public class MyStack {
 	
 	// 스택의 값이 들어올 위치를 추적하여 해당 위치로만 값을 입력받음
 	private static int nowPoint=1;
 	private Object[] array;
 	
 	
-	public Stack(int size) {
+	public MyStack(int size) {
 		array = new Object[size];
 	}
 	

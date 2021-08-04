@@ -1,17 +1,11 @@
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.format.TextStyle;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Locale;
-import java.util.Scanner;
 
 import intern.no01.ToStringWith;
 import intern.no02.Circle;
 import intern.no02.Square;
 import intern.no02.Triangle;
 import intern.no03.InstanceCount;
-import intern.no04.Stack;
+import intern.no04.MyStack;
 import intern.no05.RepeatSum;
 import intern.no06.Round;
 import intern.no07.ThreeDArray;
@@ -27,36 +21,36 @@ import intern.no15.ReadCsv;
 public class MainClass {
 	public static void main(String[] args) {
 
-		/*
+		
 		// no01 Object의 toString을 오버라이드하여 해시등을 지움.
 		System.out.println(new ToStringWith(30, 20));
 
-		int area = 0;
+		int shapeArea = 0;
 		// no02 Shape 추상 클래스의 추상메서드를 상속받아 삼,사각형 및 원형의 넓이를 구함.
 		Square sq = new Square(10, 10);
-		area = sq.getArea();
-		System.out.println(area);
+		shapeArea = sq.getArea();
+		System.out.println(shapeArea);
 
-		Triangle tr = new Triangle(10, 5);
-		area = tr.getArea();
-		System.out.println(area);
+		Triangle triangle = new Triangle(10, 5);
+		shapeArea = triangle.getArea();
+		System.out.println(shapeArea);
 
 		// 삼각형의 넓이는 밑변*높이 와 두 변의 길이와 각도를 통해 넓이를 구할 수 있다.
-		Triangle tr2 = new Triangle(10, 14, 40);
-		area = tr2.getArea();
-		System.out.println(area);
+		Triangle triangle2 = new Triangle(10, 14, 40);
+		shapeArea = triangle2.getArea();
+		System.out.println(shapeArea);
 
-		Circle ci = new Circle(5);
-		area = ci.getArea();
-		System.out.println(area);
+		Circle circle = new Circle(5);
+		shapeArea = circle.getArea();
+		System.out.println(shapeArea);
 
 		//  no03 static을 통해 생성된 객체의 수를 구하였다.
-		InstanceCount ic = new InstanceCount();
-		InstanceCount ic2 = new InstanceCount();
-		InstanceCount ic3 = new InstanceCount();
+		InstanceCount instanceCount = new InstanceCount();
+		InstanceCount instanceCount2 = new InstanceCount();
+		InstanceCount instanceCount3 = new InstanceCount();
 
 		// no04 
-		Stack stack = new Stack(100);
+		MyStack stack = new MyStack(100);
 		stack.push("hi");
 		stack.push("hi2");
 		stack.push("hi3");
@@ -76,73 +70,73 @@ public class MainClass {
 		stack.isFull();
 
 		// no05 double은 15자리수 까지 정확도를 유지 정확한값은 아님.
-		RepeatSum rs = new RepeatSum(20, 0.1);
-		System.out.println(rs.value());
+		RepeatSum repeatSum = new RepeatSum(20, 0.1);
+		System.out.println(repeatSum.value());
 
 		// no06 double 값과 반올림 원하는 위치(음수일경우 소수점 자리)
-		Round rd = new Round(54436.12345678, -6); // 
-		rd.getValue();
+		Round round = new Round(54436.12345678, -6); // 
+		round.getValue();
 
 		// no07 
-		ThreeDArray tda = new ThreeDArray(2, 2, 2);
-		tda.put(1, 1, 1, 1);
-		tda.put(2, 1, 1, 2);
-		tda.put(1, 2, 1, 3);
-		tda.showArray();
+		ThreeDArray threeDArray = new ThreeDArray(2, 2, 2);
+		threeDArray.put(1, 1, 1, 1);
+		threeDArray.put(2, 1, 1, 2);
+		threeDArray.put(1, 2, 1, 3);
+		threeDArray.showArray();
 
-		tda.get(2, 1, 1);
+		threeDArray.get(2, 1, 1);
 
-		ArrayList<String> as = new ArrayList<String>();
-		as.add("hi");
-		as.add("hi");
-		System.out.println(as);
-		System.out.println(as.size());
-		System.out.println(as.isEmpty());
+		ArrayList<String> arrayString = new ArrayList<String>();
+		arrayString.add("hi");
+		arrayString.add("hi");
+		System.out.println(arrayString);
+		System.out.println(arrayString.size());
+		System.out.println(arrayString.isEmpty());
 
 		// no08 - 미완성
-		MyArrayList<Integer> mal = new MyArrayList<Integer>();
-		mal.add(3);
-		System.out.println("mal:" + mal.size());
-		System.out.println(mal);
+		MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
+		myArrayList.add(3);
+		System.out.println("mal:" + myArrayList.size());
+		System.out.println(myArrayList);
 
 		// no09
-		DateCompare dc = new DateCompare();
+		DateCompare dateCompare = new DateCompare();
 
 		// no10
-		CalendarUi cu = new CalendarUi(2000, 8);
+		CalendarUi calendarUi = new CalendarUi(2000, 8);
 
 		// no11
-		SpriteString ss = new SpriteString("Seattle.WA", '.');
-		ss.sprite();
+		SpriteString spriteString = new SpriteString("Seattle.WA", '.');
+		spriteString.sprite();
 
 		// no12
-		StringFormat sf = new StringFormat();
-		sf.append("It's a nice");
-		sf.append("day, isn't it, Mr. Mxyzzptllxy?");
-		sf.append("I think we should");
-		sf.append("go for a walk.");
+		StringFormat stringFormat = new StringFormat();
+		stringFormat.append("It's a nice");
+		stringFormat.append("day, isn't it, Mr. Mxyzzptllxy?");
+		stringFormat.append("I think we should");
+		stringFormat.append("go for a walk.");
 
-		sf.show();
+		stringFormat.show();
 
 		// no13 
-		StringSort ss1 = new StringSort();
-		ss1.append("Contents");
-		ss1.append("1 Usage");
-		ss1.append("2 Encoding");
-		ss1.append("2.1 Character encodings");
-		ss1.append("2.2 Control codes");
-		ss1.append("3 See also");
+		StringSort stringSort = new StringSort();
+		stringSort.append("Contents");
+		stringSort.append("1 Usage");
+		stringSort.append("2 Encoding");
+		stringSort.append("2.1 Character encodings");
+		stringSort.append("2.2 Control codes");
+		stringSort.append("3 See also");
 
-		ss1.lSort();
-		ss1.cSort();
-		ss1.rSort();
-		ss1.show();
+		stringSort.lSort();
+		stringSort.cSort();
+		stringSort.rSort();
+		stringSort.show();
 
 		// no14
-		BackToFront btf = new BackToFront("Father Charles Goes Down And Ends Battle");
+		BackToFront backToFront = new BackToFront("Father Charles Goes Down And Ends Battle");
 
 
-		*/
+		
 		
 		// no15
 		ReadCsv rc = new ReadCsv();

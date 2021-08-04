@@ -6,47 +6,47 @@ public class StringSort {
 	
 	
 
-	private StringBuffer str = new StringBuffer();
-	ArrayList<String> as = new ArrayList<String>();
+	private StringBuffer strBuffer = new StringBuffer();
+	ArrayList<String> arrayString = new ArrayList<String>();
 	
 	public void append(String s) {
-		this.as.add(s);
+		this.arrayString.add(s);
 
 	}
 	
 	public void show() {
-		System.out.println(str.toString());
+		System.out.println(strBuffer.toString());
 	}
 	
 	
 	public void rSort() {
-		for(int i=0;i<as.size();i++) {
-			String v = as.get(i);
+		for(int i=0;i<arrayString.size();i++) {
+			String v = arrayString.get(i);
 			for(int j=0; j<(70-v.length());j++) {
-				str.append(" ");
+				strBuffer.append(" ");
 			}
-			str.append(v+"\n");
+			strBuffer.append(v+"\n");
 		}
 	}
 	
 	public void cSort() {
-		for(int i=0;i<as.size();i++) {
-			String v = as.get(i);
+		for(int i=0;i<arrayString.size();i++) {
+			String v = arrayString.get(i);
 			for(int j=0; j<(70-v.length())/2;j++) {
-				str.append(" ");
+				strBuffer.append(" ");
 			}
-			str.append(v+"\n");
+			strBuffer.append(v+"\n");
 		}
 	}
 	
 	public void lSort() {
-		for(int i=0;i<as.size();i++) {
-			String v = as.get(i);
-			str.append(v);
+		for(int i=0;i<arrayString.size();i++) {
+			String v = arrayString.get(i);
+			strBuffer.append(v);
 			for(int j=0; j<(70-v.length());j++) {
-				str.append(" ");
+				strBuffer.append(" ");
 			}
-			str.append("\n");
+			strBuffer.append("\n");
 			
 		}
 	}
