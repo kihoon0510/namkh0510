@@ -21,8 +21,8 @@ import intern.no15.ReadCSV;
 public class MainClass {
 	public static void main(String[] args) {
 		
+	
 		
-		/*
 		
 		// no01 Object의 toString을 오버라이드하여 해시등을 지움.
 		System.out.println(new ToStringWith(30, 20));
@@ -50,7 +50,10 @@ public class MainClass {
 		InstanceCount instanceCount = new InstanceCount();
 		InstanceCount instanceCount2 = new InstanceCount();
 		InstanceCount instanceCount3 = new InstanceCount();
+		instanceCount = null;
 
+		InstanceCount instanceCount4 = new InstanceCount();
+		
 		// no04 
 		MyStack stack = new MyStack(100);
 		stack.push("hi");
@@ -145,7 +148,7 @@ public class MainClass {
 		readCSV.convert("1,\"says \"\"aa\"\"\",c\r\n" + "2,\"\"\"2,130\"\"\",d\r\n" + "3,hi,\"\"\"aaa\"\"\r\n"
 				+ "\"\"ddd\"\r\n" + "4,yyy,zzz");
 		
-		*/
+		
 		
 		
 	}

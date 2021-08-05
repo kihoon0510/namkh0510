@@ -26,11 +26,11 @@ public class MyStack {
 	
 	// 값을 제거시 현재 위치를 같이 줄여준다.
 	public void pop() {
-		
+		nextPoint--;
 		if(nextPoint<0) {
 			nextPoint=0;
 		}
-		nextPoint--;
+		
 		array[nextPoint] = null;
 		show();
 	}
