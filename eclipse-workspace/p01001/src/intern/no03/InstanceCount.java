@@ -13,7 +13,8 @@ public class InstanceCount {
 	@Override
 	protected void finalize() throws Throwable {
 		// TODO Auto-generated method stub
-		super.finalize();
 		count --;
+		System.out.println("객체 제거: 사용중인 객체:"+count);
+		
 	}
 }
