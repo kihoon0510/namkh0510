@@ -10,11 +10,13 @@ public class InstanceCount {
 		System.out.println("현재 사용중인 인스턴스:"+count+"개");
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void finalize() throws Throwable {
 		// TODO Auto-generated method stub
 		count --;
 		System.out.println("객체 제거: 사용중인 객체:"+count);
+		super.finalize();
 		
 	}
 }
