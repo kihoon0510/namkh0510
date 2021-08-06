@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class ConvertToCSV {
 
-	private StringBuffer stringBuffer = new StringBuffer();
-	private ArrayList<String> arrayList = new ArrayList<String>();
+	private StringBuffer strCsv = new StringBuffer();
+	private ArrayList<String> dataList = new ArrayList<String>();
 
 	public void read() {
 		System.out.println(":wq 입력시 종료, CRLF입력시 줄바꿈");
@@ -14,19 +14,19 @@ public class ConvertToCSV {
 		String save = "";
 		while (!save.equals(":wq")) {
 			save = sc.nextLine();
-			arrayList.add(save);
+			dataList.add(save);
 		}
-		System.out.println(arrayList);
+		System.out.println(dataList);
 
 	}
 
-	public void convert() {
+	public void convertToCSV() {
 
-		for (int i = 0; i < arrayList.size() - 1; i++) {
-			stringBuffer.append(check(arrayList.get(i)));
+		for (int i = 0; i < dataList.size() - 1; i++) {
+			strCsv.append(check(dataList.get(i)));
 		}
 
-		System.out.println(stringBuffer);
+		System.out.println(strCsv);
 
 	}
 
@@ -51,8 +51,6 @@ public class ConvertToCSV {
 			return "\"\"";
 		}
 		return s;
-
 	}
-	
-	
+
 }
