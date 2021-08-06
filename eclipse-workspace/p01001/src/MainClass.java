@@ -50,7 +50,7 @@ public class MainClass {
 		InstanceCount instanceCount = new InstanceCount();
 		InstanceCount instanceCount2 = new InstanceCount();
 		InstanceCount instanceCount3 = new InstanceCount();
-		instanceCount = null;
+
 
 		InstanceCount instanceCount4 = new InstanceCount();
 		
