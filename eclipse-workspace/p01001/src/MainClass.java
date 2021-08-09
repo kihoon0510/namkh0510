@@ -208,12 +208,7 @@ public class MainClass {
 				};
 
 //		SelectData selectData = new SelectData(data);
-		char ch0 = 0;
-		char ch1 = 1;
-		char ch65 = 65;
-		System.out.println(ch0);
-		System.out.println(ch1);
-		System.out.println(ch65);
+
 
 	}
 }
