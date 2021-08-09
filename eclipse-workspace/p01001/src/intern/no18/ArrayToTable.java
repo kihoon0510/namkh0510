@@ -1,5 +1,6 @@
 package intern.no18;
 
+import java.nio.Buffer;
 import java.util.ArrayList;
 
 public class ArrayToTable {
@@ -13,21 +14,20 @@ public class ArrayToTable {
 	public ArrayList<String> title(String str) {
 		convertToArray(str, titleList);
 		titleCount = titleList.size();
-		System.out.println(titleList + "titleCount: " + titleCount);
-		
+
 		return titleList;
 	}
 
 	public ArrayList<String> contents(String str) {
 		convertToArray(str, contentList);
 		contentCount = contentList.size();
-		System.out.println(contentList + "contentCount: " + contentCount);
 
 		return contentList;
 	}
 
 	private void convertToArray(String s, ArrayList<String> list) {
 		StringBuffer buffer;
+		String tempStr;
 		int dataStartPoint = 0; // ,시작 위치.
 		chars = s.toCharArray();
 		int doubleQuotesEndPoint = 0, doubleQuotesStartPoint = 0; // "의 마지막 위치.
@@ -41,7 +41,7 @@ public class ArrayToTable {
 				buffer.append(s.substring(dataStartPoint, doubleQuotesStartPoint));
 				buffer.append(s.substring(doubleQuotesStartPoint + 1, doubleQuotesEndPoint).replace("\"\"", "\""));
 				buffer.append(s.substring(doubleQuotesEndPoint + 1, i));
-				list.add(buffer.toString());
+				list.add(buffer.toString().trim());
 				dataStartPoint = i + 1;
 			}
 
@@ -49,9 +49,9 @@ public class ArrayToTable {
 				buffer = new StringBuffer();
 				buffer.append(s.substring(dataStartPoint, doubleQuotesStartPoint));
 				buffer.append(s.substring(doubleQuotesStartPoint + 1, doubleQuotesEndPoint).replace("\"\"", "\""));
-				buffer.append(s.substring(doubleQuotesEndPoint+1, i));
-				buffer.deleteCharAt(buffer.length()-1);
-				list.add(buffer.toString());
+				buffer.append(s.substring(doubleQuotesEndPoint + 1, i));
+				buffer.deleteCharAt(buffer.length() - 1);
+				list.add(buffer.toString().trim());
 				dataStartPoint = i + 1;
 			}
 		}
@@ -77,6 +77,64 @@ public class ArrayToTable {
 
 		}
 		return 0;
+	}
+
+	public void show() {
+		StringBuffer buffer = new StringBuffer();
+
+		int culumCount = titleList.size(); // 10
+		int[] culumSize = new int[culumCount];
+		for (int i = 0; i < titleList.size(); i++) {
+			culumSize[i] = titleList.get(i).length();
+		}
+
+		for (int i = 0; i < contentList.size(); i++) {
+			if (contentList.get(i).length() > culumSize[i % 10]) {
+				culumSize[i % 10] = contentList.get(i).length();
+			}
+		}
+
+		String line = tableLine(culumCount, culumSize);
+		buffer.append(line);
+		for (int i = 0; i < culumCount; i++) {
+			buffer.append("|");
+			buffer.append(titleList.get(i));
+			for (int j = 0; j < culumSize[i] - titleList.get(i).length(); j++) {
+				buffer.append(" ");
+			}
+		}
+		buffer.append("|\n");
+		buffer.append(line);
+
+		drawContents(culumCount, buffer, culumSize);
+		buffer.append(line);
+		System.out.println(buffer);
+	}
+
+	private void drawContents(int culumCount, StringBuffer buffer, int[] culumSize) {
+		int rowCount = (contentList.size() / 10);
+		for (int x = 0; x < rowCount; x++) {
+			for (int i = 0; i < culumCount; i++) {
+				buffer.append("|");
+				buffer.append(contentList.get((10*x)+i));
+				for (int j = 0; j < culumSize[i] - contentList.get((10*x)+i).length(); j++) {
+					buffer.append(" ");
+				}
+			}
+			buffer.append("|\n");
+		}
+	}
+
+	private String tableLine(int culumCount, int[] culumSize) {
+		StringBuffer buffer = new StringBuffer();
+		for (int j = 0; j < culumCount; j++) {
+			buffer.append("+");
+			for (int i = 0; i < culumSize[j]; i++) {
+				buffer.append("-");
+			}
+		}
+		buffer.append("+\n");
+		return buffer.toString();
 	}
 
 }

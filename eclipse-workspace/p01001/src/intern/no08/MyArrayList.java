@@ -3,9 +3,6 @@ package intern.no08;
 public class MyArrayList<E> {
 	private int arraySize=1;
 	private Object[] oldlist = new Object[1];
-	private Object[] newlist = new Object[arraySize];
-	
-	
 	public boolean add(E elem) {
 		oldlist[0] = elem;
 		arraySize++;

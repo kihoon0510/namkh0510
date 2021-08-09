@@ -207,12 +207,10 @@ public class MainClass {
 				+ "";
 		
 		ArrayList<String> test = new ArrayList<String>();
-		System.out.println(title);
 		ArrayToTable arrayToTable = new ArrayToTable();
 		arrayToTable.title(title);
 		test = arrayToTable.contents(content);
-		System.out.println(test.get(9));
-		System.out.println(test.get(10));
+		arrayToTable.show();
 		
 		
 	}
