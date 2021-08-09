@@ -1,26 +1,4 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-
-import intern.no01.ToStringWith;
-import intern.no02.Circle;
-import intern.no02.Square;
-import intern.no02.Triangle;
-import intern.no03.InstanceCount;
-import intern.no04.MyStack;
-import intern.no05.RepeatSum;
-import intern.no06.Round;
-import intern.no07.ThreeDArray;
-import intern.no08.MyArrayList;
-import intern.no09.DateCompare;
-import intern.no10.CalendarUi;
-import intern.no11.SpriteString;
-import intern.no12.StringFormat;
-import intern.no13.StringSort;
-import intern.no14.BackToFront;
-import intern.no15.ConvertToCSV;
-import intern.no16.StringReaderExtends;
-import intern.no17.FindAnnotation;
-import intern.no18.ArrayToTable;
+import intern.no19.SelectData;
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -192,26 +170,50 @@ public class MainClass {
 //		s = findAnnotation.remove();
 //		System.out.println(v);
 //		System.out.println(s);
+//
+//		// no 18 
+//		String title = "\"last_name\", \"first_name\", \"email\", \"gender\", \"birthday\", \"profession\", \"location\", \"status\", \"interests\", \"seeking\"\r\n";
+//		String content = "\"Anderson\", \"Jillian\", \"jill_anderson@breakneckpizza.com\", \"F\", \"1980-09-05\", \"TechnicalWriter\", \"PaloAlto,CA\", \"single\", \"kayaking,reptiles\", \"relationship,friends\"\r\n"
+//				+ "\"Kenton\", \"Leo\", \"lkenton@starbuzzcoffee.com\", \"M\", \"1974-01-10\", \"Manager\", \"SanFrancisco,CA\",\"divorced\", \"women\", \"womentodate\"\r\n"
+//				+ "\"McGavin\", \"Darrin\", \"captainlove@headfirsttheater.com\", \"M\", \"1966-01-23\", \"CruiseShipCaptain\",\"SanDiego,CA\", \"single\", \"sailing,fishing,yachting\", \"womenforcasualrelationships\"\r\n"
+//				+ "\"Franklin\", \"Joe\", \"joe_franklin@leapinlimos.com\", \"M\", \"1977-04-28\", \"SoftwareSales\", \"Dallas,TX\", \"married\", \"fishing,drinking\", \"newjob\"\r\n"
+//				+ "\"Hamilton\", \"Jamie\", \"dontbother@starbuzzcoffee.com\", \"F\", \"1964-09-10\", \"SystemAdministrator\", \"Princeton,NJ\", \"married\", \"RPG\", \"nothing\"\r\n"
+//				+ "\"Chevrolet\", \"Maurice\", \"bookman4u@objectville.net\", \"M\", \"1962-07-01\", \"BookshopOwner\", \"MountainView,CA\", \"married\", \"collectingbooks,scubadiving\", \"friends\"\r\n"
+//				+ "\"Kroger\", \"Renee\", \"poorrenee@mightygumball.net\", \"F\", \"1976-12-03\", \"Unemployed\", \"SanFrancisco,CA\", \"divorced\", \"cooking\", \"employment\"\r\n"
+//				+ "\"Mendoza\", \"Angelina\", \"angelina@starbuzzcoffee.com\", \"F\", \"1979-08-19\", \"UNIXSysadmin\", \"SanFrancisco,CA\", \"married\", \"acting,dancing\", \"newjob\"\r\n"
+//				+ "\"Murphy\", \"Donald\", \"padraic@tikibeanlounge.com\", \"M\", \"1967-01-23\", \"ComputerProgrammer\", \"NewYorkCity,NY\", \"committedrelationsh\", \"RPG,anime\", \"friends\"\r\n"
+//				+ "\"Spatner\", \"John\", \"jpoet@objectville.net\", \"M\", \"1963-04-18\", \"Salesman\", \"Woodstock,NY\", \"married\", \"poetry,screenwriting\", \"nothing\"\r\n"
+//				+ "";
+//
+//		ArrayList<String> test = new ArrayList<String>();
+//		ArrayToTable arrayToTable = new ArrayToTable();
+//		arrayToTable.title(title);
+//		test = arrayToTable.contents(content);
+//		arrayToTable.showTable();
 		
-		String title = "\"last_name\", \"first_name\", \"email\", \"gender\", \"birthday\", \"profession\", \"location\", \"status\", \"interests\", \"seeking\"\r\n";
-		String content = "\"Anderson\", \"Jillian\", \"jill_anderson@breakneckpizza.com\", \"F\", \"1980-09-05\", \"TechnicalWriter\", \"PaloAlto,CA\", \"single\", \"kayaking,reptiles\", \"relationship,friends\"\r\n"
-				+ "\"Kenton\", \"Leo\", \"lkenton@starbuzzcoffee.com\", \"M\", \"1974-01-10\", \"Manager\", \"SanFrancisco,CA\",\"divorced\", \"women\", \"womentodate\"\r\n"
-				+ "\"McGavin\", \"Darrin\", \"captainlove@headfirsttheater.com\", \"M\", \"1966-01-23\", \"CruiseShipCaptain\",\"SanDiego,CA\", \"single\", \"sailing,fishing,yachting\", \"womenforcasualrelationships\"\r\n"
-				+ "\"Franklin\", \"Joe\", \"joe_franklin@leapinlimos.com\", \"M\", \"1977-04-28\", \"SoftwareSales\", \"Dallas,TX\", \"married\", \"fishing,drinking\", \"newjob\"\r\n"
-				+ "\"Hamilton\", \"Jamie\", \"dontbother@starbuzzcoffee.com\", \"F\", \"1964-09-10\", \"SystemAdministrator\", \"Princeton,NJ\", \"married\", \"RPG\", \"nothing\"\r\n"
-				+ "\"Chevrolet\", \"Maurice\", \"bookman4u@objectville.net\", \"M\", \"1962-07-01\", \"BookshopOwner\", \"MountainView,CA\", \"married\", \"collectingbooks,scubadiving\", \"friends\"\r\n"
-				+ "\"Kroger\", \"Renee\", \"poorrenee@mightygumball.net\", \"F\", \"1976-12-03\", \"Unemployed\", \"SanFrancisco,CA\", \"divorced\", \"cooking\", \"employment\"\r\n"
-				+ "\"Mendoza\", \"Angelina\", \"angelina@starbuzzcoffee.com\", \"F\", \"1979-08-19\", \"UNIXSysadmin\", \"SanFrancisco,CA\", \"married\", \"acting,dancing\", \"newjob\"\r\n"
-				+ "\"Murphy\", \"Donald\", \"padraic@tikibeanlounge.com\", \"M\", \"1967-01-23\", \"ComputerProgrammer\", \"NewYorkCity,NY\", \"committedrelationsh\", \"RPG,anime\", \"friends\"\r\n"
-				+ "\"Spatner\", \"John\", \"jpoet@objectville.net\", \"M\", \"1963-04-18\", \"Salesman\", \"Woodstock,NY\", \"married\", \"poetry,screenwriting\", \"nothing\"\r\n"
-				+ "";
-		
-		ArrayList<String> test = new ArrayList<String>();
-		ArrayToTable arrayToTable = new ArrayToTable();
-		arrayToTable.title(title);
-		test = arrayToTable.contents(content);
-		arrayToTable.show();
-		
-		
+		String[][] data  = {
+				{"구분=공동주택", "이름=양우내안애퍼스트힐", "세대수=780", "주소=울산광역시 남구 봉월로 55", "투표날짜=2020-01-01", "선거인수=770", "투표명=동대표선거"},
+				{"구분=공동주택", "이름=불당지웰푸르지오", "세대수=682", "주소=충청남도 천안시 서북구 불당24로 38", "투표날짜=2020-09-01", "선거인수=682", "투표명=동별대표자 선출 및 관리규약개정 투표"},
+				{"구분=공동주택", "이름=새뜸마을4단지", "세대수=1267", "주소=충청남도 서산시 안견로 457", "투표날짜=2020-07-21", "선거인수=1267", "투표명=입주자대표회의 임원(감사) 선거"},
+				{"구분=공동주택", "세대수=1126", "이름=한신더휴센트럴파크", "주소=충청북도 청주시 청원구 오창공원로 96", "투표날짜=2020-05-11", "선거인수=1126", "투표명=입대회장, 감사, 동별대표자 보궐 선거"},
+				{"구분=기타", "이름=신용회복위원회노동조합", "세대수=145", "주소=서울특별시 중구 세종대로 124", "투표날짜=2020-09-09", "선거인수=105", "투표명=신용회복위원회노동조합 2기 대의원 선출"},
+				{"구분=공동주택", "이름=롯데캐슬 파크타운", "세대수=1200", "주소=경기도 파주시 파주리 521번지", "투표날짜=2020-11-12", "선거인수=1111", "투표명=관리규약 (일부) 개정 및 입주자대표회의 재선거/보궐선거"},
+				{"구분=기타", "이름=한국경영학회", "주소=서울특별시 광진구 뚝섬로34길 67", "세대수=3060",  "투표날짜=2020-06-08", "선거인수=3058", "투표명=한국경영학회 2020년도 회장선거"},
+				{"구분=공동주택", "이름=해운대아이파크", "세대수=1234", "투표날짜=2020-12-28", "선거인수=1234", "투표명=동별대표자선출", "주소=부산광역시 해운대구 마린시티2로 38"},
+				{"구분=기타", "이름=국방과학연구소", "세대수=567", "주소=대전광역시 유성구 북유성대로488번길", "투표날짜=2020-03-02", "선거인수=566", "투표명=연구활동진흥비 등 지급방침 개정안"},
+				{"구분=공동주택", "이름=문지효성해링턴플레이스아파트", "세대수=890", "투표날짜=2020-04-03", "주소=대전광역시 유성구 문지로 300", "선거인수=890", "투표명=동별 대표자 재(보궐)선출 선거"},
+				{"구분=학교", "이름=수완초등학교", "세대수=1515", "주소=광주광역시 광산구 장덕로 143", "투표날짜=2020-07-11", "선거인수=1515", "투표명=2018년 2학기 전교임원선거"},
+				{"구분=학교", "이름=서울교대부설초등학교", "주소=서울특별시 서초구 서초중앙로 96", "투표날짜=2020-11-11", "세대수=226", "선거인수=226", "투표명=2018학년도 2학기 서울교대부설초등학교 학생자치회 전교임원선거"},
+				{"이름=원광정보예술고등학교", "세대수=30", "주소=전라북도 익산시 선화로13길 72", "투표날짜=2020-08-09", "선거인수=29", "투표명=원광정보예술고등학교 학생회장 및 부회장 선거(2018.2학기 - 2019.1학기)", "구분=학교"}
+				};
+
+//		SelectData selectData = new SelectData(data);
+		char ch0 = 0;
+		char ch1 = 1;
+		char ch65 = 65;
+		System.out.println(ch0);
+		System.out.println(ch1);
+		System.out.println(ch65);
+
 	}
 }
