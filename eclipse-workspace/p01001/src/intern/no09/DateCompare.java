@@ -11,7 +11,6 @@ public class DateCompare {
 	private String first, second = "";
 
 	public DateCompare() {
-		// TODO Auto-generated constructor stub
 		System.out.println("날짜 입력 형식: yyyy-mm-dd ");
 		System.out.println("첫 번째 날짜:");
 		@SuppressWarnings("resource")

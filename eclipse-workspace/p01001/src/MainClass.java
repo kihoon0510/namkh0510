@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-
-import intern.no08.MyArrayList;
-
 public class MainClass {
 	public static void main(String[] args) {
 //
@@ -241,5 +237,7 @@ public class MainClass {
 //
 //		SelectData selectData = new SelectData(data);
 //		selectData.showTable();
+		
+		
 	}
 }
