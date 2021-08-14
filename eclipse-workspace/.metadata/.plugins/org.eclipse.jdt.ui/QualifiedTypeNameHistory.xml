@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
+=======
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="intern.no04.MyStack"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="intern.no15.ConvertToCSV"/>
+    <fullyQualifiedTypeName name="java.io.StringReader"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="intern.no16.StringReaderExtends"/>
+    <fullyQualifiedTypeName name="intern.no17.FindAnnotation"/>
+    <fullyQualifiedTypeName name="java.nio.Buffer"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.xs.ItemPSVI"/>
+    <fullyQualifiedTypeName name="com.sun.tools.classfile.Opcode.Set"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="intern.no19.SelectData"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="intern.no11.SplitString"/>
+    <fullyQualifiedTypeName name="com.sun.swing.internal.plaf.basic.resources.basic"/>
+    <fullyQualifiedTypeName name="com.sun.accessibility.internal.resources.accessibility"/>
+    <fullyQualifiedTypeName name="intern.no18.ArrayToTable"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.sym"/>
+    <fullyQualifiedTypeName name="intern.no08.MyArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="intern.no11.MyString"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.ARRAYLENGTH"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+</qualifiedTypeNameHistroy>
+>>>>>>> 194206e530f07fef3a56cff5edb9536d64785adf
