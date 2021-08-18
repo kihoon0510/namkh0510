@@ -13,8 +13,5 @@
 - node.js
 
 > name: 남기훈
-
 phone: 010-6661-1259
-
 e-mail: nam_0510@naver.com
-
